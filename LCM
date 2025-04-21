@@ -1,0 +1,42 @@
+**Calculating the Number of Divisors for LCM(p,q) = r² × s³**
+
+**Step 1: Prime Factorization of the LCM**
+The LCM is given in prime-factorized form as:
+LCM(p, q) = r² × s³
+Where:
+- r and s are distinct primes
+- Exponents are 2 (for r) and 3 (for s)
+
+**Step 2: Apply the Divisor Count Formula**
+For any number n = p₁^e₁ × p₂^e₂ × ... × pₖ^eₖ, the number of distinct divisors is:
+Number of Divisors = (e₁ + 1)(e₂ + 1)...(eₖ + 1)
+
+For LCM(p, q) = r² × s³:
+Number of Divisors = (2 + 1)(3 + 1) = 3 × 4 = 12
+
+**Step 3: List of All Divisors (Optional Verification)**
+1. r⁰s⁰ = 1
+2. r⁰s¹ = s
+3. r⁰s² = s²
+4. r⁰s³ = s³
+5. r¹s⁰ = r
+6. r¹s¹ = r s
+7. r¹s² = r s²
+8. r¹s³ = r s³
+9. r²s⁰ = r²
+10. r²s¹ = r² s
+11. r²s² = r² s²
+12. r²s³ = r² s³
+
+**Key Points:**
+1. The formula works because r and s are distinct primes
+2. Each exponent eᵢ contributes (eᵢ + 1) choices for its power in a divisor
+3. General formula: For LCM(p,q) = rᵃ × sᵇ × tᶜ, number of divisors is (a+1)(b+1)(c+1)
+
+**Example:**
+If LCM(p,q) = 2² × 3³ = 108, then:
+Number of Divisors = (2+1)(3+1) = 12
+Divisors of 108: 1, 2, 3, 4, 6, 9, 12, 18, 27, 36, 54, 108
+
+**Final Answer:**
+The number of distinct divisors of LCM(p,q) = r² × s³ is: 12
